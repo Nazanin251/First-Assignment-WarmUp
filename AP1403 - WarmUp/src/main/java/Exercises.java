@@ -4,8 +4,15 @@ public class Exercises {
         complete this function to check if the input number is prime or not
      */
     public boolean isPrime(long n) {
+
         // todo
-        return false;
+        int sum;
+        for(int i=0 ; i<n ; i++){
+            if(n%i==0) sum++;
+        }
+        if(sum==0)return true;
+        else return false; 
+        
     }
 
     /*
@@ -15,8 +22,31 @@ public class Exercises {
         if the input is not a fibonacci number with description above, return -1
      */
     public long fibonacciIndex(long n) {
+
         // todo
+        int index=0;
+        int a=0;
+        int b=1;
+    
+        if (n<0)return -1;
+        if(n==0)return 0;
+        index++;
+        if(n==1)return index;
+        index++;
+        while (b <= num) {
+            int nextFib = a + b;
+            a = b;
+            b = nextFib;
+            index++;
+
+            if (b == num) {
+                return index;
+            }
+        }
+
         return -1;
+
+
     }
 
     /*
@@ -39,7 +69,33 @@ public class Exercises {
      */
     public char[][] generateTriangle(int n) {
         // todo
-        return null;
+        int a=n-1;
+        for(int i=1;i<=a;i++){
+            for(int j=1;j<=i;j++)
+            {
+                if(i>=3 && j>=2 && j<i){
+                    int y=i-2;
+                    for(int w=1;w<=y;w++)
+                    {
+                        System.out.println(" ");
+                    }
+                    System.out.println("*");
+                    break;
+                }
+                else{
+                    System.out.println("*");
+
+                }
+            
+            }
+            cout <<endl;
+
+
+        }
+        for(int r=1;r<=n;r++){
+            System.out.println("*");
+        }
+            return null;
     }
 
     public static void main(String[] args) {
