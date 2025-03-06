@@ -77,23 +77,24 @@ public class Exercises {
                     int y=i-2;
                     for(int w=1;w<=y;w++)
                     {
-                        System.out.println(" ");
+                        System.out.print(" ");
                     }
-                    System.out.println("*");
+                    System.out.print("*");
                     break;
                 }
                 else{
-                    System.out.println("*");
+                    System.out.print("*");
 
                 }
             
             }
-            cout <<endl;
+            System.out.println("");
+
 
 
         }
         for(int r=1;r<=n;r++){
-            System.out.println("*");
+            System.out.print("*");
         }
             return null;
     }
